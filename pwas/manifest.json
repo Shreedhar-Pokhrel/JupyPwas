@@ -1,7 +1,7 @@
 {
   "name":"JupyPwas",
   "short_name":"JpSp",
-  "start_url":"./JupyPwas/lab/index.html",
+  "start_url":"../lab/index.html",
   "background_color":"white",
   "theme_color":"green",
   "display":"standalone",
