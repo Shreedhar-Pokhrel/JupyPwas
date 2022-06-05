@@ -1,8 +1,8 @@
 {
-  "name":"dcode PWA example",
-  "short_name":"dcode PWA example",
-  "start_url":"./",
-  "background_color":"blue",
+  "name":"JupyPwas",
+  "short_name":"JpSp",
+  "start_url":"./JupyPwas/lab/index.html",
+  "background_color":"white",
   "theme_color":"green",
   "display":"standalone",
   "orientation":"portrait",
