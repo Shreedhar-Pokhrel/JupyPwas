@@ -8,13 +8,13 @@
   "orientation":"portrait",
 
   "icons":[
-    {"src":"/pwas/image/192.png",
+    {"src":"/JupyPwas/pwas/image/192.png",
       "sizes":"192x192",
       "type":"image/png",
       "purpose":"any maskable"
     },
 
-    {"src":"/pwas/image/512.png",
+    {"src":"/JupyPwas/pwas/image/512.png",
       "sizes":"512x512",
       "type":"image/png"
     }
