@@ -1,3 +1,12 @@
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js')
+
+self.__WB_DISABLE_DEV_LOGS = true;
+
+workbox.routing.registerRoute(
+  ({request}) =>true,
+  new workbox.strategies.CacheFirst()
+);
+
 const staticCacheName = 'site-static-v1';
 const dynamicCacheName = 'site-dynamic-v1';
 const utilsCacheName = 'site-utils-v1';
@@ -41,7 +50,10 @@ self.addEventListener('activate', evt => {
   );
 });
 var noOfReq = 250;
-// fetch events
+
+
+// workbox caries out fetch event so no longer using given funcion
+// fetch events 
 self.addEventListener('fetch', evt => {
     evt.respondWith(
       caches.match(evt.request).then(cacheRes => {
@@ -67,3 +79,5 @@ self.addEventListener('fetch', evt => {
       })
     );
 });
+
+
